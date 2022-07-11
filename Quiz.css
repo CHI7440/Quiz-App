@@ -1,0 +1,69 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+  color: #fff;
+  font-family: 'Mukta', cursive;
+}
+
+h1, h3 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding: 2% 10%;
+
+}
+
+.only1TimeDisplay {
+  display: none;
+}
+
+.container {
+  padding: 10% 1%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+
+}
+li {
+  width: 70%;
+  padding: 1% 1%;
+  margin: 3% 0;
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 2px #fff;
+  transition: 1s box-shadow;
+}
+
+li:hover {
+  box-shadow: 4px 4px 10px #fff;
+}
+
+#submit {
+  margin: 2% 0;
+}
+
+.wrong {
+  background-color: red;
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+.right {
+  background-color: rgb(26, 202, 46);
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
